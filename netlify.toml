@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+  edge_functions = "netlify/edge-functions"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
